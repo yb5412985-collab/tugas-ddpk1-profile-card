@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Yusuf Bahtiar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="card-banner"></div>
+        
+        <div class="card-content">
+            <div class="avatar-wrapper">
+                <img src="Screenshot 2026-10-08 102421.png" alt="Foto Yusuf Bahtiar" class="profile-img">
+            </div>
+            
+            <h2 class="profile-name">Yusuf Bahtiar</h2>
+            <p class="profile-title">Creative Designer</p>
+            <p class="profile-bio">Fokus merancang antarmuka digital yang estetik, modern, dan mudah digunakan oleh semua orang.</p>
+            
+            <button class="btn-follow" id="followBtn">Ikuti Profil</button>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById('followBtn');
+        btn.addEventListener('click', () => {
+            if (btn.innerText === 'Ikuti Profil') {
+                btn.innerText = 'Mengikuti';
+                btn.style.background = '#10b981'; // Berubah hijau saat diklik
+            } else {
+                btn.innerText = 'Ikuti Profil';
+                btn.style.background = 'linear-gradient(135deg, #a855f7, #6366f1)';
+            }
+        });
+    </script>
+</body>
+</html>
